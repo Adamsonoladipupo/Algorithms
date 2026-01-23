@@ -4,10 +4,9 @@ import java.util.ArrayList;
 
 public class HCF {
     public static void main(String[] args) {
-        int[] array = {12,18,6};
+        int[] array = {1000,400,200, 80};
         System.out.println(getHCF(array));
     }
-
     public static ArrayList<Integer> getHCF(int[] array) {
         int divider = 2;
         ArrayList<Integer> HCFs = new ArrayList<>();
