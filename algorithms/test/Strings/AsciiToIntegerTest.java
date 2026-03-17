@@ -12,4 +12,11 @@ class AsciiToIntegerTest {
         assertEquals(expected, AsciiToInteger.aito(input));
     }
 
+    @Test
+    void convertAsciiToIntegerSecondTest(){
+        String input = " Iam55 #$ 5 me ";
+        int expected = 555;
+        assertEquals(expected, AsciiToInteger.aito(input));
+    }
+
 }
