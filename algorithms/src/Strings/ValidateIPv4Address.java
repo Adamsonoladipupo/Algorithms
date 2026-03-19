@@ -15,17 +15,20 @@ public class ValidateIPv4Address {
     private static boolean checkNumbers(String IPAddress){
         int[] arrayBoolean = new int[4];
         String number = "";
-        for (int check = 0; check < IPAddress.length(); check++){
-
-            if (IPAddress.charAt(check) != '.'){
-                number += IPAddress.charAt(check);
+//        for (int loop = 0; loop < 4; loop++){
+            for (int check = 0; check < IPAddress.length(); check++){
+                if (IPAddress.charAt(check) != '.'){
+                    number += IPAddress.charAt(check);
+                }
+                if (IPAddress.charAt(check) == '.'){
+                    int tempVar = Integer.parseInt(number);
+                    System.out.println(tempVar);
+                }
             }
-            int tempVar = Integer.parseInt(number);
-            number = "";
-            System.out.println(tempVar);
-        } return false;
+//        }
+        return false;
     }
     public static void main(String[] args){
-        System.out.println(checkNumbers("128."));
+        System.out.println(checkNumbers("125.16.100.1"));
     }
 }
