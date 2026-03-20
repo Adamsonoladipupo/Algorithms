@@ -1,0 +1,6 @@
+package Strings;
+
+class PangramTest {
+
+
+}
