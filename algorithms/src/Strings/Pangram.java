@@ -2,22 +2,16 @@ package Strings;
 
 public class Pangram {
     public static boolean isPangram(String input){
-        boolean finalResult = false;
         for (char characters = 'a'; characters <= 'z'; characters++){
+            boolean finalResult = false;
             for (int loop = 0; loop < input.length(); loop++){
-                if (Character.toLowerCase(input.charAt(loop)) == characters){
+                if (characters == Character.toLowerCase(input.charAt(loop))){
                     finalResult = true;
-                    System.out.print("Them be thesame");
-                    return finalResult;
-                }
-                else {
-                    return finalResult;
+                    break;
                 }
             }
+            if (!finalResult) return false;
         }
         return true;
-    }
-    public static void main(String [] args){
-        System.out.println(isPangram("lets get"));
     }
 }
