@@ -21,8 +21,15 @@ class FizzBuzzTest {
         String[] output = {"1", "2", "Fizz", "4", "Buzz"};
 //        assertSame(FizzBuzz.fizzBuzz(5), Arrays.toString(output));
         System.out.println(
-                FizzBuzz.fizzBuzz(5)
+                FizzBuzz.fizzBuzz(input)
         );
+    }
+
+    @Test
+    void fizzBuzzTestThree(){
+        int input = 20;
+        System.out.println(FizzBuzz.fizzBuzz(input));
+
     }
 
 }
