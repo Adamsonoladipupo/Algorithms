@@ -22,9 +22,4 @@ public class SentencePalindrome {
         }
         return newSentence;
     }
-    public static void main(String[] args){
-//        String n = removeNonAlphanumericCharacters("Too hot 5to hoot.");
-        int n =5; char m = '5';
-        System.out.println((char)n == m);
-    }
 }
