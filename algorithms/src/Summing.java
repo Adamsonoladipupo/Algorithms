@@ -24,7 +24,7 @@ public class Summing {
         return Integer.parseInt(finalResult);
     }
     public static void main(String[] args){
-        int number = 10000000; int number2 = 89990000;
+        int number = 1111111111; int number2 = 222222222;
         String result = "";
         while(number > 0){
             result += (
