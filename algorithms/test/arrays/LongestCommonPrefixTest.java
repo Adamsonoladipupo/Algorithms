@@ -58,4 +58,13 @@ class LongestCommonPrefixTest {
         String actual = LongestCommonPrefix.longestCommonPrefix(input);
         assertEquals(expected, actual);
     }
+
+
+    @Test
+    void LongestCommonPrefixSixTest(){
+        String[] input = {"flower","flower","flower","flower"};
+        String expected = "flower";
+        String actual = LongestCommonPrefix.longestCommonPrefix(input);
+        assertEquals(expected, actual);
+    }
 }

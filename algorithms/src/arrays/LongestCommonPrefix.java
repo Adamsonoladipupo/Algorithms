@@ -13,7 +13,7 @@ public class LongestCommonPrefix {
                     if(innerLoop == loop) continue;
                     commonPrefix = prefix;
                     count++;
-                } else if (innerLoop != loop){
+                } else {
                     break;
                 }
             }
@@ -27,6 +27,7 @@ public class LongestCommonPrefix {
         StringBuilder prefix = new StringBuilder();
         if(Objects.equals(word, ""))return "";
         for (int loop = 0; loop < prefixCount; loop++){
+            if(prefixCount > word.length()) break;
             prefix.append(word.charAt(loop));
         }
         return prefix.toString();
