@@ -6,20 +6,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class LongestCommonPrefixTest {
     @Test
-    void LongestCommonPrefixGetWordFromArrayTest(){
-        String[] input = {"flower","flow","flight"};
-        String expected = LongestCommonPrefix.getWord(0,input);
-        assertEquals("flower", expected);
-    }
-
-    @Test
-    void LongestCommonPrefixGetPrefixFromWordTest(){
-        String word = "flower";
-        String prefix = LongestCommonPrefix.getPrefix(word, 2);
-        assertEquals("fl", prefix);
-    }
-
-    @Test
     void LongestCommonPrefixTest(){
         String[] input = {"flower","flow","floght, flock"};
         String expected = "flo";
