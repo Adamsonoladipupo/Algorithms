@@ -19,7 +19,7 @@ public class RemoveDuplicate {
                 if(uniqueNumber.get(loop) != null){
                     finalUnique[loop] = uniqueNumber.get(loop);
                 }
-                else finalUnique[loop] = ;
+//                else finalUnique[loop] = 20;
             }
         }
         return finalUnique;
