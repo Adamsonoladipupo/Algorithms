@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class RemoveDuplicate {
-    public static int[] amountOfUnique(int[] numbers){
-        int[] finalUnique = new int[numbers.length];
+    public static String[] amountOfUnique(int[] numbers){
+        String[] finalUnique = new String[numbers.length];
+        Arrays.fill(finalUnique, "_");
         ArrayList<Integer> uniqueNumber = new ArrayList<>();
         for (int checker : numbers) {
             for (int checkUniques = 0; checkUniques <= uniqueNumber.size(); checkUniques++) {
@@ -14,12 +15,11 @@ public class RemoveDuplicate {
                 }
             }
         }
-        for (int number : finalUnique){
+        for (String number : finalUnique){
             for (int loop = 0; loop < uniqueNumber.size(); loop++){
                 if(uniqueNumber.get(loop) != null){
-                    finalUnique[loop] = uniqueNumber.get(loop);
+                    finalUnique[loop] = String.valueOf(uniqueNumber.get(loop));
                 }
-//                else finalUnique[loop] = 20;
             }
         }
         return finalUnique;
